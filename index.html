@@ -3,23 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-  atOptions = {
-    'key' : '9a69dc275b7941b8cd82ea95d7ce2b30',
-    'format' : 'iframe',
-    'height' : 300,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/9a69dc275b7941b8cd82ea95d7ce2b30/invoke.js"></script>
-    <meta name="msvalidate.01" content="901A6D8385FFD0A7BDB9FEF87896E584" />
-    <meta name="google-site-verification" content="u0HQvmeVKbyBWL1oaDDylFERp4bmJKpg-IT7i_U0CmE" />
     
-    <!-- اڈز سکرپٹس -->
+    <!-- صرف effectivegatecpm.com والا اڈ سکرپٹ -->
     <script src="https://pl28592355.effectivegatecpm.com/b4/80/77/b48077d15893279ce3505db67539d01d.js"></script>
     
-    <!-- گوگل اینالیٹکس -->
+    <!-- گوگل اینالیٹکس (اگر ضروری ہے تو رکھیں، ورنہ ہٹا دیں) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F45XQV5C69"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -179,28 +167,35 @@
             text-decoration: none; font-weight: bold; font-size: 0.9rem;
         }
         
-        /* اڈز سٹائل */
+        /* اڈز سٹائل - سب ایک جیسی */
         .ad-container {
             margin: 20px auto;
             text-align: center;
-            min-height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
             background: rgba(255, 255, 255, 0.02);
             border-radius: 10px;
             border: 1px solid rgba(255, 215, 0, 0.1);
-            width: 90%;
-            max-width: 600px;
+            overflow: hidden;
         }
         
-        .ad-label {
-            font-size: 10px;
-            color: #666;
-            margin: 10px 0 5px 0;
-            text-align: center;
+        /* ٹاپ اڈ */
+        .top-ad-container {
+            width: 728px;
+            height: 90px;
+            max-width: 90%;
+            margin-top: 10px;
         }
         
+        /* درمیان والے اڈ */
+        .middle-ad-container {
+            width: 300px;
+            height: 250px;
+            margin: 25px auto;
+        }
+        
+        /* نیچے فکسڈ اڈ */
         .fixed-bottom-ad {
             position: fixed;
             bottom: 0;
@@ -209,7 +204,7 @@
             background: rgba(17, 24, 39, 0.95);
             padding: 10px;
             border-top: 1px solid var(--gold);
-            z-index: 100;
+            z-index: 1000;
             display: flex;
             justify-content: center;
         }
@@ -219,22 +214,75 @@
             height: 100px;
         }
         
-        /* اسٹکٹوپ اڈ */
+        /* اسٹکی ٹاپ اڈ */
         .sticky-top-ad {
             position: sticky;
             top: 80px;
             z-index: 999;
-            margin: 0 auto;
-            width: 90%;
-            max-width: 600px;
+            margin: 10px auto;
+            width: 100%;
+            max-width: 728px;
+        }
+        
+        /* لیبل */
+        .ad-label {
+            font-size: 12px;
+            color: #888;
+            margin: 5px 0;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* موبائل ریسپانسیو */
+        @media (max-width: 768px) {
+            .top-ad-container {
+                width: 320px;
+                height: 100px;
+            }
+            
+            .sticky-top-ad {
+                max-width: 320px;
+            }
+            
+            .middle-ad-container {
+                width: 300px;
+                height: 250px;
+            }
+            
+            .bottom-ad-container {
+                width: 300px;
+                height: 100px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .top-ad-container {
+                width: 300px;
+                height: 100px;
+            }
+            
+            .middle-ad-container {
+                width: 300px;
+                height: 250px;
+            }
+            
+            .bottom-ad-container {
+                width: 280px;
+                height: 90px;
+            }
+            
+            .fixed-bottom-ad {
+                padding: 8px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- ٹاپ اڈ - صفحہ کے بہت اوپر -->
+    <!-- ٹاپ اڈ - صفحہ کے اوپر -->
     <div class="ad-label">ADVERTISEMENT</div>
-    <div class="ad-container">
+    <div class="ad-container top-ad-container">
         <div id="container-b48077d15893279ce3505db67539d01d"></div>
     </div>
 
@@ -247,11 +295,10 @@
         </button>
     </div>
 
-    <!-- اسٹکٹوپ اڈ - ہیڈر کے بعد -->
+    <!-- اسٹکی ٹاپ اڈ - ہیڈر کے بعد -->
     <div class="sticky-top-ad">
         <div class="ad-label">ADVERTISEMENT</div>
-        <div class="ad-container">
-            <!-- یہاں سے گوگل ایڈس کوڈ ہٹا دیا گیا ہے -->
+        <div class="ad-container middle-ad-container">
             <div id="container-b48077d15893279ce3505db67539d01d"></div>
         </div>
     </div>
@@ -296,10 +343,9 @@
         </div>
     </div>
 
-    <!-- پروفائل کے بعد اڈ -->
+    <!-- پروفائل کے بعد درمیان والا اڈ -->
     <div class="ad-label">ADVERTISEMENT</div>
-    <div class="ad-container">
-        <!-- یہاں سے گوگل ایڈس کوڈ ہٹا دیا گیا ہے -->
+    <div class="ad-container middle-ad-container">
         <div id="container-b48077d15893279ce3505db67539d01d"></div>
     </div>
 
@@ -309,8 +355,7 @@
 
     <!-- سرچ کے بعد اڈ -->
     <div class="ad-label">ADVERTISEMENT</div>
-    <div class="ad-container">
-        <!-- یہاں سے گوگل ایڈس کوڈ ہٹا دیا گیا ہے -->
+    <div class="ad-container middle-ad-container">
         <div id="container-b48077d15893279ce3505db67539d01d"></div>
     </div>
 
@@ -320,16 +365,15 @@
     <!-- فائلوں کی لسٹ کے درمیان اڈ -->
     <div id="midListAd" style="display:none;">
         <div class="ad-label">ADVERTISEMENT</div>
-        <div class="ad-container">
+        <div class="ad-container middle-ad-container">
             <div id="container-b48077d15893279ce3505db67539d01d"></div>
         </div>
     </div>
 
     <!-- فکسڈ نیچے والا اڈ -->
     <div class="fixed-bottom-ad">
-        <div class="ad-label" style="color:#fff; margin:5px;">ADVERTISEMENT</div>
+        <div class="ad-label" style="color:#fff;">ADVERTISEMENT</div>
         <div class="bottom-ad-container">
-            <!-- یہاں سے گوگل ایڈس کوڈ ہٹا دیا گیا ہے -->
             <div id="container-b48077d15893279ce3505db67539d01d"></div>
         </div>
     </div>
@@ -396,7 +440,8 @@
                 // ہر 5ویں فائل کے بعد اڈ دکھائیں
                 if (i > 0 && i % 5 === 0) {
                     container.innerHTML += `
-                        <div class="ad-container" style="margin:20px auto;">
+                        <div class="ad-label">ADVERTISEMENT</div>
+                        <div class="ad-container middle-ad-container">
                             <div id="container-b48077d15893279ce3505db67539d01d"></div>
                         </div>
                     `;
